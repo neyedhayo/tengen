@@ -1,0 +1,10 @@
+{
+  "sepolia": {
+    "network": "sepolia",
+    "contractAddress": "0x3B157f99356823497d5f0Dcb9840E500Be9F9933",
+    "minFeePerJob": "1000000000000000",
+    "deployer": "0xC6371B0Ba0cE3B452dc460432462840d96E0A715",
+    "deployedAt": "2025-12-07T14:23:26.632Z",
+    "blockNumber": 9789234
+  }
+}
