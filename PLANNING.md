@@ -620,11 +620,26 @@ ssh-keygen -t ed25519 -C "tengen-bridge"
 ## Current State
 
 **Date:** December 7, 2025
-**Phase:** Active Development - M1 (Ethereum Contracts)
+**Phase:** Active Development - M2 Complete, Ready for M3 (Bridge)
 
 ### Completed
 
 - [x] M0: Project Setup & Infrastructure (100%)
+- [x] M1: Ethereum Smart Contracts (100%)
+  - [x] ComputeGateway.sol deployed to Sepolia: `0x3B157f99356823497d5f0Dcb9840E500Be9F9933`
+  - [x] Contract verified on Etherscan
+  - [x] 29/29 tests passing
+  - [x] ABI exported to bridge and frontend
+  - [x] Complete documentation (contracts/README.md)
+- [x] M2: Qubic Smart Contracts (100% - Proof of Concept)
+  - [x] PrimeFinder.h written (130 lines QPI contract)
+  - [x] MonteCarlo.h written (250+ lines QPI contract)
+  - [x] Development environment setup (Node, Python, qubic-core, qubic-ts-library)
+  - [x] RPC connection tested and working
+  - [x] CLI tools created (test-rpc.js, check-balance.js, get-identity.js)
+  - [x] Comprehensive README.md documentation
+  - [x] Deployment process researched and documented
+  - ⚠️ **CRITICAL FINDING:** Qubic contracts require governance deployment (2-3 weeks, not feasible for hackathon)
 - [x] PRD written (TENGEN_BRIDGE_PRD.md)
 - [x] Architecture planned (PLANNING.md)
 - [x] Claude Code context prepared (CLAUDE.md)
@@ -654,19 +669,23 @@ ssh-keygen -t ed25519 -C "tengen-bridge"
 
 ### In Progress
 
-- [ ] M1: Ethereum Smart Contracts - ComputeGateway.sol development
+- [ ] Nothing (M2 complete, ready for M3)
 
 ### Blocked
 
-- [ ] Nothing yet
+- ⚠️ Qubic contract deployment (requires governance proposal - 2-3 weeks)
+  - **Impact:** Cannot deploy actual Qubic contracts for hackathon
+  - **Mitigation:** Bridge will simulate Qubic execution for demo
+  - **Reference:** qubic-core/doc/contracts.md - Deployment section
 
 ### Next Milestone
 
-**First Checkpoint (M1 Complete)**
-- ComputeGateway.sol developed and tested locally
-- ComputeGateway.sol deployed to Sepolia
-- Contract verified on Etherscan
-- ABI exported for bridge and frontend
+**M3: Bridge Agent Development** (ADJUSTED STRATEGY)
+- Python bridge agent (Ethereum event listener)
+- Node.js Qubic client (for potential future use)
+- **Simulated Qubic execution** for hackathon demo
+- Result submission to Ethereum
+- Error handling and retries
 
 ---
 
