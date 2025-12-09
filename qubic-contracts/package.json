@@ -1,0 +1,23 @@
+{
+  "name": "tengen-qubic-contracts",
+  "version": "1.0.0",
+  "description": "Qubic QPI contracts for Tengen Bridge compute coprocessor",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node deploy/deploy.js",
+    "test": "node cli/test-contracts.js"
+  },
+  "keywords": [
+    "qubic",
+    "qpi",
+    "smart-contracts",
+    "compute",
+    "bridge"
+  ],
+  "author": "Tengen Bridge Team",
+  "license": "MIT",
+  "dependencies": {
+    "@qubic-lib/qubic-ts-library": "^0.1.6",
+    "dotenv": "^16.6.1"
+  }
+}
